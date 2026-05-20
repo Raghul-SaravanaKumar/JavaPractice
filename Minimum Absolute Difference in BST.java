@@ -21,7 +21,6 @@ class Solution {
             min = Math.min(min,
                     node.val - prev.val);
         }
-
         prev = node;
 
         inorder(node.right);
