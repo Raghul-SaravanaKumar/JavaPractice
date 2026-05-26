@@ -1,6 +1,6 @@
 class Solution {
 
-    public int findJudge(int n, int[][] trust) {
+    public int findJudges(int n, int[][] trust) {
 
         int[] count = new int[n + 1];
 
