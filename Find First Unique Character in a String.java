@@ -1,6 +1,6 @@
 class Solution {
 
-    public int firstUniqChar(String s) {
+    public int FirstUniqChar(String s) {
 
         int[] count = new int[26];
 
