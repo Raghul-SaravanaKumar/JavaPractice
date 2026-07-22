@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Solution {
+
+    public int[] distinctDifferenceArray(int[] nums) {
+
+        int n = nums.length;
+        int[] ans = new int[n];
+
+        HashSet<Integer> prefix = new HashSet<>();
+
+        for(int i = 0; i < n; i++) {
+
+            prefix.add(nums[i]);
+
+            HashSet<Integer> suffix = new HashSet<>();
+
+            for(int j = i + 1; j < n; j++) {
+                suffix.add(nums[j]);
+            }
+
+            ans[i] = prefix.size() - suffix.size();
+        }
+
+        return ans;
+    }
+}
