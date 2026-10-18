@@ -1,9 +1,7 @@
 class Solution {
-
     public void moveZeroes(int[] nums) {
 
         int index = 0;
-
         for(int num : nums) {
 
             if(num != 0) {
